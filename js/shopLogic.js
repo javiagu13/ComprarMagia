@@ -59,6 +59,46 @@ function InfantilMostrar(){
 	HideRestOfTraditionalProducts("Infantil");
 }
 
+//Search
+function Search(){
+	var searchText = String(document.getElementById("search-input").value);
+	
+	var arrayOfElements=document.getElementsByClassName("Productos");
+	
+	for (var i=0; i<arrayOfElements.length;i++){
+		var className = arrayOfElements[i].getAttribute("name");
+		var str = String(className).toLowerCase();
+		if(str.includes(searchText.toLowerCase())){
+			arrayOfElements[i].style.display="block";
+		}
+		else{
+			arrayOfElements[i].style.display="none";
+		}
+	}
+}
+
+
+//Filtro
+function filter(){
+	var minValue = document.getElementById('minamount').value;
+	var maxValue = document.getElementById('maxamount').value;
+	
+	var array=$("selector").filter(function() {
+    return  $(this).attr("price") < 100;
+	});
+	
+	var title = $( "em" ).attr( "title" );
+$( "div" ).text( title );
+
+	for (var i=0; i<array.length;i++){
+		array[i].style.display="none";
+	}
+	console.log(array);
+}
+
+
+
+
 
 
 

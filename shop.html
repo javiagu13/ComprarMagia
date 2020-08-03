@@ -67,20 +67,9 @@
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="#">Women’s</a></li>
-                            <li><a href="#">Men’s</a></li>
-                            <li class="active"><a href="./shop.html">Shop</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="./product-details.html">Product Details</a></li>
-                                    <li><a href="./shop-cart.html">Shop Cart</a></li>
-                                    <li><a href="./checkout.html">Checkout</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li class="active"><a href="./shop.html">Tienda</a></li>
+                            <li><a href="./contact.html">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -170,13 +159,30 @@
 									</div>
 								</div>
 							</div>
+							<!--<div class="sidebar__filter">
+                            <div class="section-title">
+                                <h4>Shop by price</h4>
+                            </div>
+                            <div class="filter-range-wrap">
+                                <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                                data-min="0" data-max="250"></div>
+                                <div class="range-slider">
+                                    <div class="price-input">
+                                        <p>Price:</p>
+                                        <input type="text" id="minamount">
+                                        <input type="text" id="maxamount">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" onclick="filter();">Filter</a>
+                        </div>-->
 						</div>
                     </div>
                 </div>
 				
                 <div class="col-lg-9 col-md-9">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 Cerca Levitaciones">
+                        <div class="col-lg-4 col-md-6 Productos Cerca Levitaciones" name="Cerca1Levitacion">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-1.jpg">
                                     <div class="label new">New</div>
@@ -199,7 +205,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Cerca Imposibles">
+                        <div class="col-lg-4 col-md-6 Productos Cerca Imposibles" name="Cerca2Imposibles">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-2.jpg">
                                     <ul class="product__hover">
@@ -221,7 +227,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Cerca Milagros">
+                        <div class="col-lg-4 col-md-6 Productos Cerca Milagros" name="Cerca3Milagros">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-3.jpg">
                                     <ul class="product__hover">
@@ -243,7 +249,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Salon Formate">
+                        <div class="col-lg-4 col-md-6 Productos Salon Formate" name="Salon1Formate">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-4.jpg">
                                     <ul class="product__hover">
@@ -265,7 +271,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Salon Trucos">
+                        <div class="col-lg-4 col-md-6 Productos Salon Trucos" name="Salon2Trucos">
                             <div class="product__item sale">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-5.jpg">
                                     <div class="label">Sale</div>
@@ -288,7 +294,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Salon Trucos">
+                        <div class="col-lg-4 col-md-6 Productos Salon Trucos">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-6.jpg">
                                     <ul class="product__hover">
@@ -297,7 +303,7 @@
                                         <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                                     </ul>
                                 </div>
-                                <div class="product__item__text">
+                                <div class="product__item__text" name="Salon3Trucos">
                                     <h6><a href="#">Salon3Trucos</a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
@@ -310,7 +316,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Calle Levitaciones">
+                        <div class="col-lg-4 col-md-6 Productos Calle Levitaciones" name="Calle1Levitaciones">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-7.jpg">
                                     <ul class="product__hover">
@@ -332,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Calle Trucos">
+                        <div class="col-lg-4 col-md-6 Productos Calle Trucos" name="Calle2Trucos">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-8.jpg">
                                     <div class="label stockout stockblue">Out Of Stock</div>
@@ -355,7 +361,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Calle Formate">
+                        <div class="col-lg-4 col-md-6 Productos Calle Formate" name="Calle3Formate">
                             <div class="product__item sale">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-9.jpg">
                                     <div class="label">Sale</div>
@@ -378,7 +384,7 @@
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-4 col-md-6 Manipulacion Imposibles">
+						<div class="col-lg-4 col-md-6 Productos Manipulacion Imposibles" name="Manipulacion1Imposibles">
                             <div class="product__item sale">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-9.jpg">
                                     <div class="label">Sale</div>
@@ -401,7 +407,7 @@
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-4 col-md-6 Infantil Imposibles">
+						<div class="col-lg-4 col-md-6 Productos Infantil Imposibles" name="Infantil1Imposibles">
                             <div class="product__item sale">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/shop-9.jpg">
                                     <div class="label">Sale</div>
@@ -573,7 +579,26 @@
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch">+</div>
             <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
+				<style>
+				  button {
+					display: inline-block;
+					background-color: #979290;
+					border-radius: 10px;
+					border: 4px double #cccccc;
+					color: #eeeeee;
+					text-align: center;
+					font-size: 24px;
+					width: 150px;
+					height:50px;
+					-webkit-transition: all 0.5s;
+					-moz-transition: all 0.5s;
+					-o-transition: all 0.5s;
+					transition: all 0.5s;
+					cursor: pointer;
+					margin: 5px;
+				  }
+				</style>
+                <input type="text" id="search-input" placeholder="Busca Aqui....."> <button class="otro" type="button" onclick="Search();" >Buscar!</button> 
             </form>
         </div>
     </div>
@@ -591,6 +616,7 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
 	<script src="js/shopLogic.js"></script>
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
 </body>
 
 </html>
