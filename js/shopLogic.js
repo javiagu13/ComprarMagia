@@ -81,19 +81,23 @@ function Search(){
 //Filtro
 function filter(){
 	var minValue = document.getElementById('minamount').value;
+	var minValue=parseInt(minValue.slice(1));
+	
 	var maxValue = document.getElementById('maxamount').value;
+	var maxValue=parseInt(maxValue.slice(1));
 	
-	var array=$("selector").filter(function() {
-    return  $(this).attr("price") < 100;
-	});
 	
-	var title = $( "em" ).attr( "title" );
-$( "div" ).text( title );
-
-	for (var i=0; i<array.length;i++){
-		array[i].style.display="none";
+	var arrayOfElements=document.getElementsByClassName("Productos");
+	
+	for (var i=0; i<arrayOfElements.length;i++){
+		var price= parseInt(arrayOfElements[i].getAttribute("price"));
+		if(price<minValue){
+			console.log("else");
+			console.log(price);
+			arrayOfElements[i].style.display="none";
+		}		
 	}
-	console.log(array);
+	
 }
 
 
