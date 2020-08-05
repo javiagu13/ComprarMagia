@@ -91,9 +91,7 @@ function filter(){
 	
 	for (var i=0; i<arrayOfElements.length;i++){
 		var price= parseInt(arrayOfElements[i].getAttribute("price"));
-		if(price<minValue){
-			console.log("else");
-			console.log(price);
+		if(price<minValue||price>maxValue){
 			arrayOfElements[i].style.display="none";
 		}		
 	}

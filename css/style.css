@@ -1064,10 +1064,12 @@ ol {
 }
 
 .categories__text h1 {
-	font-family: "Cookie", cursive;
+	/*font-family: "Cookie", cursive;*/
 	color: #111111;
+	font-weight: 500;
 	margin-bottom: 5px;
 }
+
 
 .categories__text h4 {
 	color: #111111;
