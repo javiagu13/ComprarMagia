@@ -1,62 +1,62 @@
 //MOSTRAR EFECTOS IMPOSIBLES
 function ImposiblesMostrar(){
-	ShowProducts("Imposibles");
 	HideRestOfModernProducts("Imposibles");
+	ShowProducts("Imposibles");
 }
 
 //MOSTRAR LEVITACIONES
 function LevitacionesMostrar(){
-	ShowProducts("Levitaciones");
 	HideRestOfModernProducts("Levitaciones");
+	ShowProducts("Levitaciones");
 }
 
 //MOSTRAR MILAGROS TECNOLÓGICOS
 function MilagrosMostrar(){
-	ShowProducts("Milagros");
 	HideRestOfModernProducts("Milagros");
+	ShowProducts("Milagros");
 }
 
 //MOSTRAR FORMATE COMO UN PROFESIONAL
 function FormateMostrar(){
-	ShowProducts("Formate");
 	HideRestOfModernProducts("Formate");
+	ShowProducts("Formate");
 }
 
 //MOSTRAR TRUCOS PARA PRINCIPIANTES
 function TrucosMostrar(){
-	ShowProducts("Trucos");
 	HideRestOfModernProducts("Trucos");
+	ShowProducts("Trucos");
 }
 
 
 //MOSTRAR MAGIA DE CERCA
 function CercaMostrar(){
-	ShowProducts("Cerca");
 	HideRestOfTraditionalProducts("Cerca");
+	ShowProducts("Cerca");
 }
 
 //MOSTRAR MAGIA DE SALON
 function SalonMostrar(){
-	ShowProducts("Salon");
 	HideRestOfTraditionalProducts("Salon");
+	ShowProducts("Salon");
 }
 
 //MOSTRAR MAGIA DE CALLE
 function CalleMostrar(){
-	ShowProducts("Calle");
 	HideRestOfTraditionalProducts("Calle");
+	ShowProducts("Calle");
 }
 
 //MOSTRAR MANIPULACION
 function ManipulacionMostrar(){
-	ShowProducts("Manipulacion");
 	HideRestOfTraditionalProducts("Manipulacion");
+	ShowProducts("Manipulacion");
 }
 
 //MOSTRAR MAGIA INFANTIL
 function InfantilMostrar(){
-	ShowProducts("Infantil");
 	HideRestOfTraditionalProducts("Infantil");
+	ShowProducts("Infantil");
 }
 
 //Search
