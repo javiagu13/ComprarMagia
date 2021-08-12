@@ -2,7 +2,7 @@
 function ImposiblesMostrar(){
 	HideRestOfModernProducts("Imposibles");
 	ShowProducts("Imposibles");
-}
+} 
 
 //MOSTRAR LEVITACIONES
 function LevitacionesMostrar(){
