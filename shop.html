@@ -77,10 +77,7 @@
         </div>
     </header>
     <!-- Header Section End -->
-<div style="background-color:black; padding-bottom:10px;"> <!--"background-image: url('img/wood.jpg');  background-size: 100% 300%; background-repeat:no-repeat;" background-color:black;-->
-		<h1 style="text-align:center; color:white;">COMPRAR MAGIA</h1>
-		<h2 style="text-align:center; color:#979290;">RECOMENDACIONES DE TRUCOS DE MAGIA</h2>
-</div>
+
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option">
         <div class="container">
@@ -96,7 +93,7 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <!-- Shop Section Begin -->
+    <!-- SHOP SECTION BEGIN ----------------------------------------------------->
     <section class="shop spad">
         <div class="container">
             <div class="row">
@@ -104,53 +101,85 @@
                     <div class="shop__sidebar">
 						<div class="sidebar__categories">
 							<div class="section-title">
-									<h4>Categorias Modernas</h4>
-								</div>
-								<div class="categories__accordion">
-									<div class="accordion" id="accordionExample">
-										<div class="card-heading active"><p>
-											<a onclick="ImposiblesMostrar();" href="#">Efectos Imposibles</a></p>
-										</div>
-									
-										<div class="card-heading"><p>
-											<a onclick="LevitacionesMostrar();" href="#">Levitaciones</a></p>
-										</div>
-										<div class="card-heading"><p>
-											<a onclick="MilagrosMostrar();" href="#">Milagros Tecnológicos</a></p>
-										</div>
-										<div class="card-heading"><p>
-											<a onclick="FormateMostrar();" href="#">Formate Como Un Profesional</a></p>
-										</div>
-										<div class="card-heading"><p>
-											<a onclick="TrucosMostrar();" href="#">Trucos Para Principiantes</a></p>
-										</div>
-									</div>
-								</div>
-							
-						<div class="sidebar__categories">
-							<div class="section-title">
-									<h4>Categorias Tradicionales</h4>
+									<h4>BUSCAR POR ESTILO DE MAGIA</h4>
 								</div>
 								<div class="categories__accordion">
 									<div class="accordion" id="accordionExample">
 										<div class="card-heading active"><p>
 											<a onclick="CercaMostrar();" href="#">Magia de Cerca</a></p>
 										</div>
-									
 										<div class="card-heading"><p>
-											<a onclick="SalonMostrar();" href="#">Magia de salón/escena</a></p>
+											<a onclick="SalonMostrar();" href="#">Magia de Salón/Escena</a></p>
 										</div>
 										<div class="card-heading"><p>
-											<a onclick="CalleMostrar();" href="#">Magia de calle</a></p>
+											<a onclick="CalleMostrar();" href="#">Magia de Calle</a></p>
+										</div>
+                                        <div class="card-heading"><p>
+											<a onclick="InfantilMostrar();" href="#">Magia Infantil</a></p>
 										</div>
 										<div class="card-heading"><p>
 											<a onclick="ManipulacionMostrar();" href="#">Manipulación</a></p>
-										</div>
+										</div>										
 										<div class="card-heading"><p>
-											<a onclick="InfantilMostrar();" href="#">Magia Infantil</a></p>
+								<!---->		<a onclick="MentalismoMostrar();" href="#">Mentalismo</a></p>
+										</div>
+                                        <div class="card-heading"><p>
+							<!---->			<a onclick="CartasMostrar();" href="#">Magia con Cartas</a></p>
+										</div>
+                                        <div class="card-heading"><p>
+							<!---->			<a onclick="MonedasMostrar();" href="#">Magia con Monedas</a></p>
+										</div>
+                                        <div class="card-heading"><p>
+							<!---->			<a onclick="LevitacionesMostrar();" href="#">Levitaciones</a></p>
 										</div>
 									</div>
 								</div>
+                                
+                                
+                                <!--<div class="sidebar__categories">
+                                    <div class="section-title">
+                                            <h4>FÓRMATE</h4>
+                                        </div>
+                                        <div class="categories__accordion">
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="card-heading active"><p>
+                                                    <a onclick="CercaMostrar();" href="#">Libros</a></p>
+                                                </div>
+                                                <div class="card-heading active"><p>
+                                                    <a onclick="CercaMostrar();" href="#">DVDs</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+
+							<div class="section-title">
+									<h4>COMPLEMENTOS</h4>
+								</div>
+								<div class="categories__accordion">
+									<div class="accordion" id="accordionExample">
+                                        <div class="card-heading active"><p>
+								<!---->		<a onclick="ConsumiblesMostrar();" href="#">Consumibles</a></p>
+										</div>
+										<div class="card-heading"><p>
+								<!---->		<a onclick="AccesoriosMostrar();" href="#">Accesorios</a></p>
+										</div>
+									</div>
+								</div>
+                                <div class="section-title">
+                                    <h4>FÓRMATE</h4>
+                                </div>
+                                <div class="categories__accordion">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card-heading active"><p>
+                                <!---->	    <a onclick="LibrosMostrar();" href="#">Libros</a></p>
+                                        </div>
+                                        <div class="card-heading active"><p>
+                            <!---->	        <a onclick="DVDsMostrar();" href="#">DVDs</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
 							</div>
 							<div class="sidebar__filter">
                             <div class="section-title">
@@ -168,7 +197,7 @@
                                 </div>
                             </div>
                             <a href="#" onclick="filter();">Filtro</a>
-                        </div>
+
 						</div>
                     </div>
                 </div>
@@ -176,17 +205,19 @@
                 <div class="col-lg-9 col-md-9">
                     <div class="row">
 					
-					<!--INICIO DE PRODUCTOS!!!!  //ATRIBUTOS: Infantil, Calle, Salon, Cerca, Manipulacion // Imposibles, Levitaciones, Milagros, Formate, Trucos-->
-                        <div class="col-lg-4 col-md-6 Productos Cerca Salon Calle Levitaciones Imposibles Milagros Trucos" price="40" name="Venom">
+                        <!--ATRIBUTOS: Cerca, Salon, Calle, Infantil, Mentalismo, Manipulacion, Cartas, Monedas, Levitaciones \\ Consumibles, Accesorios \\ Libros DVDs-->
+                        
+                        <!--Showmanship For Magicians-->
+						<div class="col-lg-4 col-md-6 Productos Libros" price="10" name="ShowmanshipForMagicians">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/venom.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/71GT1X8-uCL.jpg">
                                     <div class="label new">New</div>
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Venom"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "ShowmanshipForMagicians"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Venom</a></h6>
+                                    <h6><a href="#">Showmanship For Magicians</a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -194,340 +225,774 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <div class="product__price">39.16€</div>
+                                    <div class="product__price">10.14€</div>
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-4 col-md-6 Productos Cerca Salon Calle Levitaciones Imposibles Milagros" price="89" name="TarantulaDos">
+
+                        <!--NUEVOS PRODUCTOS-->
+                        <!--Magic By Misdirection-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="9" name="MagicbyMisdirection">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/tarantula.jpg">
-                                    <div class="label new">New</div>
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/P/B0051J58KM.01._SCLZZZZZZZ_SX500_.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "TarantulaDos"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "MagicbyMisdirection"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Tarantula  II</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">88.90€</div>
+                                    <h6><a href="#">Magic by Misdirection</a></h6>
+                                    <div class="product__price">8.45€</div>
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-4 col-md-6 Productos Cerca Formate" price="19" name="EspejoPracticas">
+
+
+                        <!--The Trick Brain-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="9" name="TheTrickBrain">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/espejo.jpg">
-                                    <div class="label new">New</div>
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/P/B0050ZKREE.01._SCLZZZZZZZ_SX500_.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "EspejoPracticas"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "TheTrickBrain"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Espejo para practicar</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">18.99€</div>
+                                    <h6><a href="#">The Trick Brain</a></h6>
+                                    <div class="product__price">8.45€</div>
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-4 col-md-6 Productos Calle Cerca Trucos Imposibles" price="20" name="CardToon">
+
+                        <!--Domina la magia: Los mejores trucos para sorprender-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="19" name="Losmejorestrucosparasorprender">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/toon.jpg">
-                                    <div class="label new">New</div>
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51NNBSI0MlL._SX495_BO1,204,203,200_.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "CardToon"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Losmejorestrucosparasorprender"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Card Toon II</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">19.99€</div>
+                                    <h6><a href="#">Domina la magia: Los mejores trucos para sorprender</a></h6>
+                                    <div class="product__price">18.95€</div>
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-4 col-md-6 Productos Cerca Salon Calle Imposibles Trucos" price="10" name="wow">
+
+                        <!--Ilusionismo Elemental-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="30" name="IlusionismoElemental">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/wow.jpg">
-                                    <div class="label new">New</div>
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/41OMkamopXL._AC_.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "wow"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "IlusionismoElemental"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">WOW</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">9.99€</div>
+                                    <h6><a href="#">Ilusionismo Elemental</a></h6>
+                                    <div class="product__price">29.95€</div>
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-4 col-md-6 Productos Salon Calle Imposibles Trucos" price="10" name="BotellaDesaparicion">
+                        <!--Coloring Book-->
+                        <div class="col-lg-4 col-md-6 Productos Infantil" price="12" name="ColoringBook">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/botella.jpg">
-                                    <div class="label new">New</div>
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/71SBLaer4AL._AC_SL1024_.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "BotellaDesaparicion"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "ColoringBook"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Botella de Desaparición</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">30.99€</div>
+                                    <h6><a href="#">Coloring Book</a></h6>
+                                    <div class="product__price">11.92€</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Productos Cerca Imposibles" price="49" name="Cerca2Imposibles">
+
+                        <!--Tarbell Vol 1-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="37" name="TarbellVol1">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-2.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/41c+19e0oSL.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Cerca2Imposibles"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "TarbellVol1"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Cerca2Imposibles</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 49.0</div>
+                                    <h6><a href="#">Tarbell Vol 1</a></h6>
+                                    <div class="product__price">36.10€</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Productos Cerca Milagros" price="59" name="Cerca3Milagros">
+
+                        <!--Tarbell Vol 2-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="40" name="TarbellVol2">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-3.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51ToYAY8MaL.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Cerca3Milagros"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "TarbellVol2"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Cerca3Milagros</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 59.0</div>
+                                    <h6><a href="#">Tarbell Vol 2</a></h6>
+                                    <div class="product__price">39.89€</div>
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-4 col-md-6 Productos Cerca Milagros" price="59" name="GatoVolador">
+
+                        <!--Tarbell Vol 3-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="40" name="TarbellVol3">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-3.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51J-87GDCuL.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "GatoVolador"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "TarbellVol3"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">GatoVolador</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 59.0</div>
+                                    <h6><a href="#">Tarbell Vol 3</a></h6>
+                                    <div class="product__price">39.89€</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Productos Salon Formate" price="59" name="Salon1Formate">
+
+
+                        <!--Tarbell Vol 5-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="40" name="TarbellVol5">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-4.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51Ip36zipeL.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Salon1Formate"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "TarbellVol5"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Salon1Formate</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 59.0</div>
+                                    <h6><a href="#">Tarbell Vol 5</a></h6>
+                                    <div class="product__price">39.89€</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Productos Salon Trucos" price="49" name="Salon2Trucos">
-                            <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-5.jpg">
-                                    <div class="label">Sale</div>
-                                    <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Salon2Trucos"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
-                                    </ul>
-                                </div>
-                                <div class="product__item__text">
-                                    <h6><a href="#">Salon2Trucos</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 Productos Salon Trucos" price="59" name="Salon3Trucos">
+
+                        <!--Tarbell Vol 6-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="40" name="TarbellVol6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-6.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51kmJEzhVbL.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Salon3Trucos"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "TarbellVol6"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
-                                <div class="product__item__text" >
-                                    <h6><a href="#">Salon3Trucos</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 59.0</div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Tarbell Vol 6</a></h6>
+                                    <div class="product__price">39.89€</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Productos Calle Levitaciones" price="59" name="Calle1Levitaciones">
+
+
+                        <!--Tarbell Vol 7-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="40" name="TarbellVol7">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-7.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51zyq6n-SsL.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Calle1Levitaciones"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "TarbellVol7"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Calle1Levitaciones</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 59.0</div>
+                                    <h6><a href="#">Tarbell Vol 7</a></h6>
+                                    <div class="product__price">39.89€</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Productos Calle Trucos" price="59" name="Calle2Trucos">
+
+
+                        <!--Tarbell Vol 8-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="42" name="TarbellVol8">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-8.jpg">
-                                    <div class="label stockout stockblue">Out Of Stock</div>
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51Jo9VThQsL.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Calle2Trucos"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "TarbellVol8"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Calle2Trucos</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 59.0</div>
+                                    <h6><a href="#">Tarbell Vol 8</a></h6>
+                                    <div class="product__price">42€</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 Productos Calle Formate" price="49" name="Calle3Formate">
-                            <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-9.jpg">
-                                    <div class="label">Sale</div>
+
+
+                        <!--13 escalones del mentalismo-->
+                        <div class="col-lg-4 col-md-6 Productos Libros Mentalismo" price="38" name="13escalonesdelmentalismo">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/91K2BJatnUL.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Calle3Formate"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
-                                    </ul>
-                                </div>
-                                <div class="product__item__text varita">
-                                    <h6><a href="#">Calle3Formate</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
-                                </div>
-                            </div>
-                        </div>
-						<div class="col-lg-4 col-md-6 Productos Manipulacion Imposibles" price="49" name="Manipulacion1Imposibles">
-                            <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-9.jpg">
-                                    <div class="label">Sale</div>
-                                    <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Manipulacion1Imposibles"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "13escalonesdelmentalismo"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Manipulacion1Imposibles</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
+                                    <h6><a href="#">13 escalones del mentalismo</a></h6>
+                                    <div class="product__price">37.05€</div>
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-4 col-md-6 Productos Infantil Imposibles" price="49" name="Infantil1Imposibles">
-                            <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/shop/shop-9.jpg">
-                                    <div class="label">Sale</div>
+
+
+
+                        <!--David Copperfield History of Magic-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="17" name="DavidCopperfieldHistoryofMagic">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/51OpESurvuS.jpg">
+                                    
                                     <ul class="product__hover">
-                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Infantil1Imposibles"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "DavidCopperfieldHistoryofMagic"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Infantil1Imposibles</a></h6>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
+                                    <h6><a href="#">David Copperfield History of Magic</a></h6>
+                                    <div class="product__price">16.90€</div>
                                 </div>
                             </div>
                         </div>
+
+
+                        <!--Oracolo por Ernesto Planas-->
+                        <div class="col-lg-4 col-md-6 Productos Libros Manipulacion" price="43" name="OracoloporErnestoPlanas">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51S9UqPHcjL.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "OracoloporErnestoPlanas"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Oracolo por Ernesto Planas</a></h6>
+                                    <div class="product__price">42.72€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Gran Escuela Cartomagica Vol 5-->
+                        <div class="col-lg-4 col-md-6 Productos Libros Cartas" price="32" name="GranEscuelaCartomagicaVol5">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51+DXmMF6EL.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "GranEscuelaCartomagicaVol5"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Gran Escuela Cartomagica Vol 5</a></h6>
+                                    <div class="product__price">31.20€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Maximo Entretenimiento-->
+                        <div class="col-lg-4 col-md-6 Productos Libros Salon" price="49" name="MaximoEntretenimiento">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/517B8pZ874L.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "MaximoEntretenimiento"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Maximo Entretenimiento</a></h6>
+                                    <div class="product__price">48.11€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Aprenda Usted Magia-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="9" name="AprendaUstedMagia">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/71-66zYx1dL.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "AprendaUstedMagia"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Aprenda Usted Magia</a></h6>
+                                    <div class="product__price">9.00€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Mnemotecnia Teatral-->
+                        <div class="col-lg-4 col-md-6 Productos Libros" price="29" name="MnemotecniaTeatral">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://images-na.ssl-images-amazon.com/images/I/51-zFQ4NumL.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "MnemotecniaTeatral"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Mnemotecnia Teatral</a></h6>
+                                    <div class="product__price">28.50€</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Bola de Contact-->
+                        <div class="col-lg-4 col-md-6 Productos Manipulacion Calle Salon" price="16" name="BoladeContact">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/41T0xSkGioS._AC_SL1000_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "BoladeContact"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Bola de Contact</a></h6>
+                                    <div class="product__price">15.97€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Cartas de Manipulacion Dorso Negro-->
+                        <div class="col-lg-4 col-md-6 Productos Manipulacion Salon" price="14" name="CartasdeManipulacionDorsoNegro">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/41KIDm8IyAL._AC_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "CartasdeManipulacionDorsoNegro"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Cartas de Manipulacion Dorso Negro</a></h6>
+                                    <div class="product__price">13.99€</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Cartas de Manipulacion Dorso Color Carne-->
+                        <div class="col-lg-4 col-md-6 Productos Manipulacion Salon" price="11" name="CartasdeManipulacionDorsoColorCarne">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/41eeIZNhEhS._AC_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "CartasdeManipulacionDorsoColorCarne"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Cartas de Manipulacion Dorso Color Carne</a></h6>
+                                    <div class="product__price">10.56€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Abanico de Manipulacion Rojo-->
+                        <div class="col-lg-4 col-md-6 Productos Manipulacion Salon" price="9" name="AbanicodeManipulacionRojo">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/61dyCQ96qnL._AC_SL1000_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "AbanicodeManipulacionRojo"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Abanico de Manipulacion Rojo</a></h6>
+                                    <div class="product__price">9.00€</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Abanico de Manipulacion Negro-->
+                        <div class="col-lg-4 col-md-6 Productos Manipulacion Salon" price="9" name="AbanicodeManipulacionNegro">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/61-Xv1wNpaL._AC_SL1018_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "AbanicodeManipulacionNegro"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Abanico de Manipulacion Negro</a></h6>
+                                    <div class="product__price">9.00€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Abanico de Manipulacion Blanco-->
+                        <div class="col-lg-4 col-md-6 Productos Manipulacion Salon" price="9" name="AbanicodeManipulacionBlanco">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/614yM8zgHZL._AC_SL1124_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "AbanicodeManipulacionBlanco"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Abanico de Manipulacion Blanco</a></h6>
+                                    <div class="product__price">9.00€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Guantes de Fuego-->
+                        <div class="col-lg-4 col-md-6 Productos Manipulacion Salon" price="17" name="GuantesdeFuego">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/51KpxkdNY9L._AC_SL1000_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "GuantesdeFuego"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Guantes de Fuego</a></h6>
+                                    <div class="product__price">16.89€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Cartas de Manipulacion Murphy-->
+                        <div class="col-lg-4 col-md-6 Productos Manipulacion Salon" price="7" name="CartasdeManipulacionMurphy">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/61dA+J9sOGL._AC_SL1000_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "CartasdeManipulacionMurphy"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Cartas de Manipulacion Murphy</a></h6>
+                                    <div class="product__price">7.00€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Cargador de Cartas-->
+                        <div class="col-lg-4 col-md-6 Productos Manipulacion Salon" price="17" name="CargadordeCartas">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/41kSIz-Wq1L._AC_SL1000_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "CargadordeCartas"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Cargador de Cartas</a></h6>
+                                    <div class="product__price">16.89€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Baraja Cardtoon-->
+                        <div class="col-lg-4 col-md-6 Productos Cerca Cartas" price="7" name="BarajaCardtoon">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/419qub2jUhL._AC_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "BarajaCardtoon"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Baraja Cardtoon</a></h6>
+                                    <div class="product__price">6.08€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--La Manita-->
+                        <div class="col-lg-4 col-md-6 Productos Cerca Monedas" price="6" name="LaManita">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/51OwcRW4cNS._AC_SL1000_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "LaManita"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">La Manita</a></h6>
+                                    <div class="product__price">5.95€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Baraja Invisible-->
+                        <div class="col-lg-4 col-md-6 Productos Cerca Salon Calle Cartas" price="15" name="BarajaInvisible">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/71byRWXHJhL._AC_SL1500_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "BarajaInvisible"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Baraja Invisible</a></h6>
+                                    <div class="product__price">14.99€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Tapete 42x32.5-->
+                        <div class="col-lg-4 col-md-6 Productos Cerca Accesorios" price="8" name="Tapete42x32.5">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/41fb1gQTCWL._AC_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Tapete42x32.5"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Tapete 42x32.5</a></h6>
+                                    <div class="product__price">7.99€</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Rutina Magia con Bolas de Esponja-->
+                        <div class="col-lg-4 col-md-6 Productos Cerca Salon Calle" price="10" name="RutinaMagiaconBolasdeEsponja">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/51oDRmSGsCL._AC_SL1000_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "RutinaMagiaconBolasdeEsponja"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Rutina Magia con Bolas de Esponja</a></h6>
+                                    <div class="product__price">9.95€</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Copenetro-->
+                        <div class="col-lg-4 col-md-6 Productos Salon Monedas" price="173" name="Copenetro">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/51GnUwpiuSL._AC_SL1000_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Copenetro"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Copenetro</a></h6>
+                                    <div class="product__price">172.89€</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Wireframe-->
+                        <div class="col-lg-4 col-md-6 Productos Cerca Cartas Calle" price="8" name="Wireframe">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/41Z9MJEh-UL._AC_SL1077_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "Wireframe"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Wireframe</a></h6>
+                                    <div class="product__price">7.64€</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--ITR-->
+                        <div class="col-lg-4 col-md-6 Productos Cerca Calle Levitaciones Mentalismo" price="5" name="ITR">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/51Do0Eof6rL._AC_SL1024_.jpg">
+                                    
+                                    <ul class="product__hover">
+                                        <li><form action="product-details.html" method="GET"><input type = "hidden" name = "ITR"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">ITR</a></h6>
+                                    <div class="product__price">4.79€</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Aros Chinos-->
+<div class="col-lg-4 col-md-6 Productos Cerca Calle Salon" price="11" name="ArosChinos">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/61pgSF7nDAL._AC_SL1500_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "ArosChinos"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Aros Chinos</a></h6>
+			<div class="product__price">10.99€</div>
+		</div>
+	</div>
+</div>
+
+<!--Cera Para Hilos Invisibles-->
+<div class="col-lg-4 col-md-6 Productos Consumibles Levitaciones" price="7" name="CeraParaHilosInvisibles">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/51C9yeBU+pL._AC_SL1200_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "CeraParaHilosInvisibles"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Cera Para Hilos Invisibles</a></h6>
+			<div class="product__price">6.87€</div>
+		</div>
+	</div>
+</div>
+
+<!--Tuerca que rota sola-->
+<div class="col-lg-4 col-md-6 Productos Mentalismo Cerca Calle" price="5" name="Tuercaquerotasola">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/613o1BpT+oL._AC_SL1020_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "Tuercaquerotasola"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Tuerca que rota sola</a></h6>
+			<div class="product__price">4.97€</div>
+		</div>
+	</div>
+</div>
+
+<!--Maletin-->
+<div class="col-lg-4 col-md-6 Productos Accesorios" price="19" name="Maletin">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/71GCd15J3FL._AC_SL1001_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "Maletin"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Maletin</a></h6>
+			<div class="product__price">18.99€</div>
+		</div>
+	</div>
+</div>
+
+<!--Bolsas de Aparicion-->
+<div class="col-lg-4 col-md-6 Productos Salon Infantil" price="9" name="BolsasdeAparicion">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/71S8DLwi5RL._AC_SL1024_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "BolsasdeAparicion"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Bolsas de Aparicion</a></h6>
+			<div class="product__price">8.39€</div>
+		</div>
+	</div>
+</div>
+
+<!--Hilo Elastico-->
+<div class="col-lg-4 col-md-6 Productos Accesorios" price="23" name="HiloElastico">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/71QZfqFhcKL._AC_SL1500_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "HiloElastico"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Hilo Elastico</a></h6>
+			<div class="product__price">22,79€</div>
+		</div>
+	</div>
+</div>
+
+<!--Raccoon-->
+<div class="col-lg-4 col-md-6 Productos Infantil Salon Calle" price="14" name="Raccoon">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/61-vEFzdE7L._AC_SL1024_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "Raccoon"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Raccoon</a></h6>
+			<div class="product__price">13,19€</div>
+		</div>
+	</div>
+</div>
+
+<!--Chop Cup Magnetico-->
+<div class="col-lg-4 col-md-6 Productos Salon Cerca Calle Infantil" price="12" name="ChopCupMagnetico">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/51JiRf5tD1L._AC_SL1024_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "ChopCupMagnetico"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Chop Cup Magnetico</a></h6>
+			<div class="product__price">11,99€</div>
+		</div>
+	</div>
+</div>
+
+<!--Cascada de Cartas-->
+<div class="col-lg-4 col-md-6 Productos Salon Infantil Manipulacion" price="53" name="CascadadeCartas">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/61s3f2oaRRL._SL1200_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "CascadadeCartas"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Cascada de Cartas</a></h6>
+			<div class="product__price">52.95€</div>
+		</div>
+	</div>
+</div>
+
+
+<!--Baraja Stripper-->
+<div class="col-lg-4 col-md-6 Productos Cartas Calle Cerca" price="15" name="BarajaStripper">
+	<div class="product__item">
+		<div class="product__item__pic set-bg" data-setbg="https://m.media-amazon.com/images/I/81LYDiAfzaL._AC_SL1500_.jpg">
+			
+			<ul class="product__hover">
+				<li><form action="product-details.html" method="GET"><input type = "hidden" name = "BarajaStripper"/><input type="submit" style="border-radius: 25px;" value="Ver Producto"/></form></li>
+			</ul>
+		</div>
+		<div class="product__item__text">
+			<h6><a href="#">Baraja Stripper</a></h6>
+			<div class="product__price">14.99€</div>
+		</div>
+	</div>
+</div>
+
+
+                        <!--NUEVOS PRODUCTOS-->
+                        
                         <div class="col-lg-12 text-center">
                             <div class="pagination__option">
                                 <a href="#">1</a>
@@ -541,7 +1006,7 @@
             </div>
         </div>
     </section>
-    <!-- FINAL DE PRODUCTOS-->
+    <!-- FINAL DE PRODUCTOS ----------------------------------------------------->
 
     <!-- Services Section End -->
 <div style="background-color:black;">

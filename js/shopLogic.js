@@ -1,63 +1,84 @@
-//MOSTRAR EFECTOS IMPOSIBLES
-function ImposiblesMostrar(){
-	HideRestOfModernProducts("Imposibles");
-	ShowProducts("Imposibles");
-} 
-
-//MOSTRAR LEVITACIONES
-function LevitacionesMostrar(){
-	HideRestOfModernProducts("Levitaciones");
-	ShowProducts("Levitaciones");
-}
-
-//MOSTRAR MILAGROS TECNOLÓGICOS
-function MilagrosMostrar(){
-	HideRestOfModernProducts("Milagros");
-	ShowProducts("Milagros");
-}
-
-//MOSTRAR FORMATE COMO UN PROFESIONAL
-function FormateMostrar(){
-	HideRestOfModernProducts("Formate");
-	ShowProducts("Formate");
-}
-
-//MOSTRAR TRUCOS PARA PRINCIPIANTES
-function TrucosMostrar(){
-	HideRestOfModernProducts("Trucos");
-	ShowProducts("Trucos");
-}
-
+//ATRIBUTOS: Cerca, Salon, Calle, Infantil, Mentalismo, Manipulacion, Cartas, Monedas, Levitaciones \\ Consumibles, Accesorios \\ Libros DVDs
 
 //MOSTRAR MAGIA DE CERCA
 function CercaMostrar(){
-	HideRestOfTraditionalProducts("Cerca");
+	HideAllProducts();
 	ShowProducts("Cerca");
 }
 
 //MOSTRAR MAGIA DE SALON
 function SalonMostrar(){
-	HideRestOfTraditionalProducts("Salon");
+	HideAllProducts();
 	ShowProducts("Salon");
 }
 
 //MOSTRAR MAGIA DE CALLE
 function CalleMostrar(){
-	HideRestOfTraditionalProducts("Calle");
+	HideAllProducts();
 	ShowProducts("Calle");
-}
-
-//MOSTRAR MANIPULACION
-function ManipulacionMostrar(){
-	HideRestOfTraditionalProducts("Manipulacion");
-	ShowProducts("Manipulacion");
 }
 
 //MOSTRAR MAGIA INFANTIL
 function InfantilMostrar(){
-	HideRestOfTraditionalProducts("Infantil");
+	HideAllProducts();
 	ShowProducts("Infantil");
 }
+
+//MOSTRAR MENTALISMO
+function MentalismoMostrar(){
+	HideAllProducts();
+	ShowProducts("Mentalismo");
+}
+
+//MOSTRAR MANIPULACION
+function ManipulacionMostrar(){
+	HideAllProducts();
+	ShowProducts("Manipulacion");
+}
+
+//MOSTRAR CARTAS
+function CartasMostrar(){
+	HideAllProducts();
+	ShowProducts("Cartas");
+}
+
+//MOSTRAR MONEDAS
+function MonedasMostrar(){
+	HideAllProducts();
+	ShowProducts("Monedas");
+}
+
+//MOSTRAR LEVITACIONES
+function LevitacionesMostrar(){
+	HideAllProducts();
+	ShowProducts("Levitaciones");
+}
+
+//MOSTRAR CONSUMIBLES
+function ConsumiblesMostrar(){
+	HideAllProducts();
+	ShowProducts("Consumibles");
+}
+
+//MOSTRAR ACCESORIOS
+function AccesoriosMostrar(){
+	HideAllProducts();
+	ShowProducts("Accesorios");
+}
+
+//MOSTRAR LIBROS
+function LibrosMostrar(){
+	HideAllProducts();
+	ShowProducts("Libros");
+}
+
+//MOSTRAR DVDS
+function DVDsMostrar(){
+	HideAllProducts();
+	ShowProducts("DVDs");
+}
+
+
 
 //Search
 function Search(){
@@ -80,6 +101,7 @@ function Search(){
 
 //Filtro
 function filter(){
+	ShowAllProducts();
 	var minValue = document.getElementById('minamount').value;
 	var minValue=parseInt(minValue.slice(1));
 	
@@ -123,45 +145,35 @@ function HideProducts(Type){
 	}
 }
 
-function HideRestOfModernProducts(Type){
-	//Hide Products
-	//Categorias Tradicionales
-	if(Type.localeCompare("Imposibles")!=0){
-		HideProducts("Imposibles");
-	}
-	if(Type.localeCompare("Levitaciones")!=0){
-		HideProducts("Levitaciones");
-	}
-	if(Type.localeCompare("Milagros")!=0){
-		HideProducts("Milagros");
-	}
-	if(Type.localeCompare("Formate")!=0){
-		HideProducts("Formate");
-	}
-	if(Type.localeCompare("Trucos")!=0){
-		HideProducts("Trucos");
-	}	
+
+function HideAllProducts(){
+	HideProducts("Cerca");
+	HideProducts("Salon");
+	HideProducts("Calle");
+	HideProducts("Infantil");
+	HideProducts("Mentalismo");
+	HideProducts("Manipulacion");
+	HideProducts("Cartas");
+	HideProducts("Monedas");
+	HideProducts("Levitaciones");
+	HideProducts("Consumibles");
+	HideProducts("Accesorios");
+	HideProducts("Libros");
+	HideProducts("DVDs");
 }
 
-//Ocultar resto de productos
-function HideRestOfTraditionalProducts(Type){
-	//Hide Products
-	//Categorias Modernas
-	if(Type.localeCompare("Cerca")!=0){
-		HideProducts("Cerca");
-	}
-	if(Type.localeCompare("Salon")!=0){
-		HideProducts("Salon");
-	}
-	if(Type.localeCompare("Calle")!=0){
-		HideProducts("Calle");
-	}
-	if(Type.localeCompare("Manipulacion")!=0){
-		HideProducts("Manipulacion");
-	}
-	if(Type.localeCompare("Infantil")!=0){
-		HideProducts("Infantil");
-	}	
+function ShowAllProducts(){
+	ShowProducts("Cerca");
+	ShowProducts("Salon");
+	ShowProducts("Calle");
+	ShowProducts("Infantil");
+	ShowProducts("Mentalismo");
+	ShowProducts("Manipulacion");
+	ShowProducts("Cartas");
+	ShowProducts("Monedas");
+	ShowProducts("Levitaciones");
+	ShowProducts("Consumibles");
+	ShowProducts("Accesorios");
+	ShowProducts("Libros");
+	ShowProducts("DVDs");
 }
-
-//ATRIBUTOS: Infantil, Calle, Salon, Cerca, Manipulacion \\ Imposibles, Levitaciones, Milagros, Formate, Trucos
