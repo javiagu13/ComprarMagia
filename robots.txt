@@ -1,0 +1,13 @@
+User-agent: *
+
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /img/
+Disallow: /js/
+Disallow: /sass/
+Disallow: /Source/
+Disallow: /.DS_Store/
+Disallow: /.gitattributes/
+
+Sitemap: https://www.articulosmagia.com/index.html
