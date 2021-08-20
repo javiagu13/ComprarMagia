@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body onload="HideExplanations();">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -79,10 +79,10 @@
     <!-- Header Section End -->
 
     <!-- Services Section End -->
-    <div style="background-color:black;">
-        <h1 style="text-align:center; color:white;">Comprar Magia</h1>
-        <h2 style="text-align:center; color:#979290;">H2 a indexar</h2>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    <div style="background-color: rgb(218, 218, 218); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px;" >
+        <h1 style="font-size:40px; text-align: center; padding-bottom:20px;">Comprar Magia</h1>
+        <h2 style="font-size:20px; text-align:center;">La tienda de magia donde comprar magia se hace fácil. Desde comprar magia de cerca pasando por juegos de magia con monedas hasta comprar magia profesional para escena. 
+        <b>Selecciona una categoría</b> de magia y <b>verás como comprar magia</b>.</h2>
     </div>
 
     <!-- Breadcrumb Begin -->
@@ -107,8 +107,10 @@
     <!-- SHOP SECTION BEGIN ----------------------------------------------------->
     <section class="shop spad">
         <div class="container">
+           
             <div class="row">
                 <div class="col-lg-3 col-md-3">
+                    
                     <div class="shop__sidebar">
 						<div class="sidebar__categories">
 							<div class="section-title">
@@ -163,9 +165,9 @@
                                         </div>
                                     </div>
                                 </div>-->
-
+                                
 							<div class="section-title">
-									<h4>COMPLEMENTOS</h4>
+									<h4>ACCESORIOS DE MAGIA</h4>
 								</div>
 								<div class="categories__accordion">
 									<div class="accordion" id="accordionExample">
@@ -178,7 +180,7 @@
 									</div>
 								</div>
                                 <div class="section-title">
-                                    <h4>FÓRMATE</h4>
+                                    <h4>FÓRMATE COMO MAGO</h4>
                                 </div>
                                 <div class="categories__accordion">
                                     <div class="accordion" id="accordionExample">
@@ -194,7 +196,7 @@
 							</div>
 							<div class="sidebar__filter">
                             <div class="section-title">
-                                <h4>Comprar por precio</h4>
+                                <h4>COMPRAR MAGIA POR PRECIO</h4>
                             </div>
                             <div class="filter-range-wrap">
                                 <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
@@ -212,10 +214,116 @@
 						</div>
                     </div>
                 </div>
+                
 				
                 <div class="col-lg-9 col-md-9">
                     <div class="row">
-					
+                        
+                        <div class="MagiaCerca" style="width:100%; text-align:center; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Magia de Cerca</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar magia de cerca</b> hay que tener en cuenta que este estilo de magia
+                                es ideal para hacer magia a amigos, para sesiones de magia de cerca... en esta sección encontraras juegos de magia con cartas,
+                                juegos de magia con monedas, en general articulos pequeños faciles de llevar para realizar magia en cualquier sitio.
+                                Los articulos de <b> esta sección </b> son <b>articulos de magia profesionales</b>, seleccionados por su <b>gran impacto</b>. <b>No son ideales para niños
+                                pero si para iniciados o amateurs en adelante</b>. Si buscas hacer magia de una manera cercana y social, esta sección es para ti.</h3>
+                        </div>
+
+                        <div class="MagiaSalon" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Magia de Salón/Escena</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar magia de escena</b> hay que tener en cuenta que este estilo de magia es ideal para 
+                            los magos que quieren empezar a hacer espectáculos de magia o que ya son magos profesionales. Normalmente los magos que quieren empezar a hacer espectáculos de magia
+                            compran este tipo de articulos, empiezan haciendo magia a su familia o amigos a modo de espectáculo y al mejorar y crecer acabar haciendo esos espectáculos en eventos o teatros.
+                            <b>No son ideales para niños pero si para iniciados</b> con interés en realizar espectáculos <b> o amateurs en adelante</b>. Si estas pensando en montar un espectáculo esta sección es para ti.
+                        </h3>
+                        </div>
+
+                        <div class="MagiaCalle" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Magia de Calle</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar magia de calle</b> o <b>street magic</b>, hay que diferenciar entre como comprar magia de calle y como comprar magia de cerca. 
+                            La magia de calle esta orientada a hacer <b>magia de mesa en mesa</b> en <b>magia en restaurantes</b> o incluso con un <b>puesto de magia en la calle</b>. Implica que los efectos deben ser 
+                            más rápidos y visuales porque la atención es complicada de mantener en este tipo de situaciones. De modo que hay juegos de cerca que sirven para magia de calle 
+                            pero no todos son una buena opción. <b>No son ideales para niños pero si para iniciados o amateurs en adelante</b>. Si estas pensando en actuar en la calle o 
+                            hacer magia en bares y restaurantes esta sección es para ti. </h3>
+                        </div>
+
+                        <div class="MagiaInfantil" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Magia Infantil</h3>
+                            <h3 style="font-size:20px;">Para comprar magia infantil hay que tener en cuenta es magia orientada a hacer espectáculos infantiles.
+                            no son articulos de magia para niños sino articulos de magia <b>para amateurs o profesionales especialmente</b>. Si estas pensando en
+                        montar un espectáculo de magia para niños esta sección es para ti.</h3>
+                        </div>
+
+                        <div class="MagiaManipulacion" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Manipulacion</h3>
+                            <h3 style="font-size:20px;">Para comprar articulos de magia de manipulacion hay que tener en cuenta que es una de las ramas mas complicadas de la magia
+                            a nivel técnico. No esta recomendado para niños e iniciados, para amateurs puede tampoco esta recomendado a menos que se trate de una persona habilidosa
+                        ya que de otra forma puede ser frustrante. Especialmente recomendado <b>para magos profesionales</b> o <b>magos amateurs con una buena capacidad técnica</b>.</h3>
+                        </div>
+
+                        <div class="MagiaMentalismo" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Mentalismo</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar articulos mentalismo</b> hay que tener en cuenta que es una disciplina de la magia para la que se <b>requiere un profundo estudio</b>
+                            ya que en el mentalismo es especialmente importante como se realizan las demostraciones de mentalismo casi mas que el efecto en si mismo. <b>Es ideal para
+                            magos amateur y magos profesionales.</b></h3>
+                        </div>
+
+                        <div class="MagiaCartas" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Magia con Cartas</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar trucos de magia con cartas</b> hay que mirar bien el juego de magia en cuestion para valorar la dificultad técnica 
+                                del mismo ya que <b>algunos solo estan recomendados para profesionales</b> mientras que <b>otros</b> pueden ser <b>ideales para niños o magos amateurs</b>. Mira bien cada articulo
+                            antes de proceder a comprar y asegurate de la dificultad técnica.</h3>
+                        </div>
+
+                        <div class="MagiaMonedas" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Magia con Monedas</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar trucos de magia con monedas</b> hay que tener en cuenta que hay <b>algunos</b> articulos de magia con monedas que son 
+                            realmente complejos a nivel técnico y <b>solo estan recomendados para magos profesionales</b> mientras que otros <b>pueden ser ideales para niños o magos amateurs</b>.
+                            Mira bien cada articulo antes de proceder a comprar y asegurate de la dificultad técnica.</h3>
+                        </div>
+
+                        <div class="MagiaLevitaciones" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Levitaciones</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar articulos de magia de levitacion</b> hay que mirar bien la levitación en cuestion para valorar la dificultad técnica 
+                                del mismo ya que <b>algunos</b> solo estan recomendados para profesionales mientras que otros <b>pueden ser ideales para niños o magos amateurs</b>. Mira bien cada articulo
+                            antes de proceder a comprar y asegurate de la dificultad técnica.</h3>
+                        </div>
+
+
+
+                        <div class="MagiaConsumibles" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Consumibles</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar consumibles</b> hay que entender que <b>son articulos de magia que se consumen</b>, es decir, si son <b>12 unidades</b> de efecto de magia
+                            quiere decir que solamente <b>se podra realizar 12 veces</b>. Son <b>articulos de magia para niños, iniciados, amateurs o profesionales</b>. De todas formas siempre es importante asegurarse
+                        de la dificultad técnica del consumible.</h3>
+                        </div>
+
+                        <div class="MagiaAccesorios" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Accesorios de Magia</h3>
+                            <h3 style="font-size:20px;"><b>Comprar accesorios de magia</b> es realmente <b>sencillo</b> ya que se entiende claramente que son con solo verlos. Desde tapetes para magos hasta maletines de magia y demás.
+                                Son <b>articulos de magia para niños, iniciados, amateurs o profesionales.</b>
+                            </h3>
+                        </div>
+
+
+
+                        <div class="MagiaLibros" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">Libros</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar libros de magia</b> hay que tener en cuenta que es la <b>herramienta principal para la formación del mago</b>.
+                                Si realmente quieres aprender magia olvidate de comprar solamente articulos de magia y centrate en comprar buenos libros de magia ya que en un solo
+                                libro puedes tener una variedad enorme con una calidad de impacto magico impresionante si se elige bien el libro. Es importante saber <b>como comprar libros de magia</b>
+                            ya que hay algunos <b>libros generales</b> como la enciclopedia de magia tarbell por la que todo mago pasa. Otros <b>especializados</b> en magia como la enciclopedia de magia con cartas de Giobbi.
+                            Es importante <b>valorar que es lo que se quiere aprender antes de comprar</b> libros de magia algunos solo estan <b>recomendados para profesionales</b> mientras que otros pueden ser ideales <b>para niños o magos amateurs</b>. Mira bien cada articulo
+                        antes de proceder a comprar y asegurate de la dificultad técnica.</h3>
+                        </div>
+
+                        <div class="MagiaDvds" style="width:100%; text-align:center; background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 60px; padding-left: 50px; padding-right: 50px; margin-top: 20px; margin-bottom:50px; border-style: groove; border-radius: 25px;" >
+                            <h3 style="font-size:40px; text-align: center; padding-bottom:20px;">DVDs</h3>
+                            <h3 style="font-size:20px;">Para <b>comprar dvds de magia</b> hay que tener en cuenta que es la segunda mejor <b>herramienta para la formación del mago</b>.
+                                Si realmente quieres aprender magia olvidate de comprar solamente articulos de magia y centrate en comprar buenos libros de magia o dvds ya que en un solo
+                                dvd puedes tener una variedad enorme de trucos de magia. Es importante <b>valorar que es lo que se quiere aprender antes de comprar</b> dvds de magia algunos solo 
+                                estan <b>recomendados para profesionales</b> mientras que otros pueden ser ideales <b> niños o magos amateurs</b>. Mira bien cada articulo
+                                antes de proceder a comprar y asegurate de la dificultad técnica.</h3>
+                        </div>
                         <!--ATRIBUTOS: Cerca, Salon, Calle, Infantil, Mentalismo, Manipulacion, Cartas, Monedas, Levitaciones \\ Consumibles, Accesorios \\ Libros DVDs-->
                         
                         <!--Showmanship For Magicians-->

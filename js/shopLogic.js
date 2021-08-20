@@ -2,80 +2,106 @@
 
 //MOSTRAR MAGIA DE CERCA
 function CercaMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Cerca");
+	ShowExplanation("MagiaCerca");
 }
 
 //MOSTRAR MAGIA DE SALON
 function SalonMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Salon");
+	ShowExplanation("MagiaSalon");
 }
 
 //MOSTRAR MAGIA DE CALLE
 function CalleMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Calle");
+	ShowExplanation("MagiaCalle");
 }
 
 //MOSTRAR MAGIA INFANTIL
 function InfantilMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Infantil");
+	ShowExplanation("MagiaInfantil");
 }
 
 //MOSTRAR MENTALISMO
 function MentalismoMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Mentalismo");
+	ShowExplanation("MagiaMentalismo");
 }
 
 //MOSTRAR MANIPULACION
 function ManipulacionMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Manipulacion");
+	ShowExplanation("MagiaManipulacion");
 }
 
 //MOSTRAR CARTAS
 function CartasMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Cartas");
+	ShowExplanation("MagiaCartas");
 }
 
 //MOSTRAR MONEDAS
 function MonedasMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Monedas");
+	ShowExplanation("MagiaMonedas");
 }
 
 //MOSTRAR LEVITACIONES
 function LevitacionesMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Levitaciones");
+	ShowExplanation("MagiaLevitaciones");
 }
 
 //MOSTRAR CONSUMIBLES
 function ConsumiblesMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Consumibles");
+	ShowExplanation("MagiaConsumibles");
 }
 
 //MOSTRAR ACCESORIOS
 function AccesoriosMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Accesorios");
+	ShowExplanation("MagiaAccesorios");
 }
 
 //MOSTRAR LIBROS
 function LibrosMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("Libros");
+	ShowExplanation("MagiaLibros");
 }
 
 //MOSTRAR DVDS
 function DVDsMostrar(){
+	HideExplanations();
 	HideAllProducts();
 	ShowProducts("DVDs");
+	ShowExplanation("MagiaDvds");
 }
 
 
@@ -143,6 +169,39 @@ function HideProducts(Type){
 	for (var i=0; i<arrayOfElements.length;i++){
 		arrayOfElements[i].style.display="none";
 	}
+}
+
+//OcultarExplicaciones
+function HideExpla(Type){
+	var arrayOfElements=document.getElementsByClassName(Type);
+	for (var i=0; i<arrayOfElements.length;i++){
+		arrayOfElements[i].style.display="none";
+	}
+}
+
+//Mostrar producto de tipo Type
+function ShowExplanation(Type){
+	var arrayOfElements=document.getElementsByClassName(Type);
+
+	for (var i=0; i<arrayOfElements.length;i++){
+		arrayOfElements[i].style.display="block";
+	}
+}
+
+function HideExplanations(){
+	HideExpla("MagiaCerca");
+	HideExpla("MagiaSalon");
+	HideExpla("MagiaCalle");
+	HideExpla("MagiaInfantil");
+	HideExpla("MagiaManipulacion");
+	HideExpla("MagiaMentalismo");
+	HideExpla("MagiaCartas");
+	HideExpla("MagiaMonedas");
+	HideExpla("MagiaLevitaciones");
+	HideExpla("MagiaConsumibles");
+	HideExpla("MagiaAccesorios");
+	HideExpla("MagiaLibros");
+	HideExpla("MagiaDvds");
 }
 
 
